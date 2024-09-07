@@ -1,8 +1,9 @@
-MIST Einthoven Club Website
+# MIST Einthoven Club Website
 This is a simple website project for the MIST Einthoven Club built with Tailwind CSS.
-Project Structure
-The project has the following structure:
 
+## Project Structure
+The project has the following structure:
+```
 src/
 ├── assets/               # Contains images and other assets
 ├── css/                  # Contains custom CSS files
@@ -13,30 +14,36 @@ src/
 ├── package.json          # Node.js package file
 ├── package-lock.json     # Node.js package lock file
 └── tailwind.config.js    # Tailwind CSS configuration file
-
+```
 Prerequisites
 Ensure you have Node.js and npm (Node Package Manager) installed on your machine.
-Setup Instructions
 
+## Setup Instructions
 1. Pull Repository:
+```bash
 git pull
+
+```
 2. Install Dependencies:
 Install the necessary Node.js packages listed in package.json:
+```bash
 npm install
+```
 3. Run the Tailwind CLI to Generate Output CSS:
 Tailwind CSS is configured to take src/input.css as input and generate the output in src/output.css. Run the following command to generate the output.css file:
+```bash
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+```
 4. Open the index.html File in Your Browser:
 Open the src/index.html file directly in your browser to see the website.
 Using Tailwind CSS
 Tailwind CSS is used for styling throughout the project. You can find custom styles in the src/input.css file. Modify the Tailwind configuration by editing tailwind.config.js.
-Tailwind CLI
+
+## Tailwind CLI
 To generate custom CSS from your input.css, run:
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
-Additional Notes
+
+## Additional Notes
 - This project uses Google Fonts for custom fonts.
 - Make sure to have a live server running if you want to see changes live without reloading manually.
 
-Acknowledgments
-- Tailwind CSS Documentation
-- Google Fonts
