@@ -6,8 +6,10 @@
     <title>MIST Einthoven Club</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="css/masonaryGrid.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   </head>
+
   <body>
     <header class="bg-black">
       <div class="w-full px-4 sm:px-6 lg:px-8">
@@ -109,85 +111,198 @@
     </header>
 
     <section class="hero">
-      <h1>MIST Einthoven Club</h1>
-      <p>IGNITING BIOMEDICAL INNOVATION</p>
-      <a href="#" class="btn">Explore</a>
+      <h1
+        class="poppins-bold uppercase bg-gradient-to-r from-cyan-500 to-blue-600 tracking-wide"
+      >
+        MIST Einthoven Club
+      </h1>
+      <p
+        class="poppins-semibold uppercase bg-gradient-to-r from-orange-500 to-yellow-400"
+      >
+        IGNITING BIOMEDICAL INNOVATION
+      </p>
+      <a href="#about" class="btn rounded-md">Explore</a>
     </section>
 
-    <section class="about">
-      <p>
+    <section class="about py-10">
+      <p class="px-20 roboto-thin text-xl tracking-wide">
         MIST Einthoven Club consists of a group of enthusiasts, who are eager to
         work collectively in the biomedical field, to develop ground-breaking
         solutions to the modern problems in the health sector of Bangladesh.
       </p>
-      <div class="about_img">
+      <div class="flex p-0 m-0">
         <div>
-          <img class="ai1" src="assets/hand.png" alt="" />
+          <img class="p-0" src="assets/hand.png" alt="biomedical-hand" />
         </div>
         <div>
-          <img class="ai2" src="assets/logo.png" alt="" />
+          <img
+            class="p-10 w-[850px]"
+            src="assets/about_club_logo.png"
+            alt="einthoven-club-logo"
+          />
         </div>
       </div>
     </section>
 
-    <section class="departments">
-      <h2>Club Departments</h2>
-      <div class="department-grid">
-        <div class="department">
-          <img src="assets/image2.png" alt="Department Image" />
-          <h3>Research & Development</h3>
-          <p>
+    <section class="lg:absolute departments pb-10 lg:mt-[-300px] sm:mt-[-100px] px-10">
+      <h2 class="poppins-bold uppercase text-2xl lg:text-4xl md:text-3xl tracking-wide pb-5">
+        Club Departments
+      </h2>
+      <div class="department-grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2">
+        <div class="department flex justify-center flex-col">
+          <div>
+            <img src="assets/hand.png" alt="Department Image" />
+          </div>
+          <div>
+            <h3 class="roboto-bold py-3 text-md">Research & Development</h3>
+          </div>
+          <div class="roboto-thin">
             Researching the activities of other clubs of MIST learning about
             other BME dedicated clubs from around the world.
-          </p>
+          </div>
         </div>
-        <div class="department">
-          <img src="assets/image2.png" alt="Department Image" />
-          <h3>Research & Development</h3>
-          <p>
+
+        <div class="department flex justify-center flex-col">
+          <div>
+            <img src="assets/hand.png" alt="Department Image" />
+          </div>
+          <div>
+            <h3 class="roboto-bold py-3 text-md">Research & Development</h3>
+          </div>
+          <div class="roboto-thin">
             Researching the activities of other clubs of MIST learning about
             other BME dedicated clubs from around the world.
-          </p>
+          </div>
         </div>
-        <div class="department">
-          <img src="assets/image2.png" alt="Department Image" />
-          <h3>Research & Development</h3>
-          <p>
+
+        <div class="department flex justify-center flex-col">
+          <div>
+            <img src="assets/hand.png" alt="Department Image" />
+          </div>
+          <div>
+            <h3 class="roboto-bold py-3 text-md">Research & Development</h3>
+          </div>
+          <div class="roboto-thin">
             Researching the activities of other clubs of MIST learning about
             other BME dedicated clubs from around the world.
-          </p>
+          </div>
         </div>
-        <div class="department">
-          <img src="assets/image2.png" alt="Department Image" />
-          <h3>Research & Development</h3>
-          <p>
+
+        <div class="department flex justify-center flex-col">
+          <div>
+            <img src="assets/hand.png" alt="Department Image" />
+          </div>
+          <div>
+            <h3 class="roboto-bold py-3 text-md">Research & Development</h3>
+          </div>
+          <div class="roboto-thin">
             Researching the activities of other clubs of MIST learning about
             other BME dedicated clubs from around the world.
-          </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="activity">
-      <h2>Club Activity</h2>
-      <div class="activity-grid">
-        <div class="activity-item">
-          <img src="assets/image3.png" alt="Activity Image" />
+    <section class="activity mt-[300px] pt-3 pb-20" id="projects">
+      <h2
+        class="text-center poppins-bold uppercase text-4xl tracking-wide py-10"
+      >
+        Club Activity
+      </h2>
+      <div class="box_container container mx-auto px-10">
+        <div class="box content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="/src/assets/p1.png" alt="" />
+          <div class="content-details fadeIn-top fadeIn-right">
+            <h3>Print Ad Design</h3>
+            <p>For Marketing Campaign</p>
+          </div>
         </div>
-        <div class="activity-item">
-          <img src="assets/image4.png" alt="Activity Image" />
+        <div class="box content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="/src/assets/p2.png" alt="" />
+          <div class="content-details fadeIn-top fadeIn-right">
+            <h3>Menu Design</h3>
+            <p>Client: Oven Fresh</p>
+          </div>
         </div>
-        <div class="activity-item">
-          <img src="assets/image5.png" alt="Activity Image" />
+        <div class="box content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="/src/assets/p3.png" alt="" />
+          <div class="content-details fadeIn-top fadeIn-right">
+            <h3>Print Ad Design</h3>
+            <p>For Marketing Campaign</p>
+          </div>
         </div>
-        <div class="activity-item">
-          <img src="assets/image6.png" alt="Activity Image" />
+        <div class="box content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="/src/assets/p4.png" alt="" />
+          <div class="content-details fadeIn-top fadeIn-right">
+            <h3>Invitation Card Design</h3>
+            <p>Client: Heavenly Plants</p>
+          </div>
         </div>
-        <div class="activity-item">
-          <img src="assets/image7.png" alt="Activity Image" />
+        <div class="box content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="/src/assets/p5.png" alt="" />
+          <div class="content-details fadeIn-top fadeIn-right">
+            <h3>Logo Design</h3>
+            <p>Client: Oven Fresh</p>
+          </div>
+        </div>
+
+        <div class="box content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="/src/assets/hand.png" alt="" />
+          <div class="content-details fadeIn-top fadeIn-right">
+            <h3>Logo Design</h3>
+            <p>Client: AfterWork</p>
+          </div>
+        </div>
+
+        <div class="box content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="/src/assets/p11.png" alt="" />
+          <div class="content-details fadeIn-top fadeIn-right">
+            <h3>Discount Card Design</h3>
+            <p>Client: Heavenly Plants</p>
+          </div>
+        </div>
+        <div class="box content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="/src/assets/p8.png" alt="" />
+          <div class="content-details fadeIn-top fadeIn-right">
+            <h3>After Care Card Design</h3>
+            <p>Client: Heavenly Plants</p>
+          </div>
+        </div>
+        <div class="box content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="/src/assets/image1.png" alt="" />
+          <div class="content-details fadeIn-top fadeIn-right">
+            <h3>After Care Card Design</h3>
+            <p>Client: Heavenly Plants</p>
+          </div>
+        </div>
+        <div class="box content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="/src/assets/p11.png" alt="" />
+          <div class="content-details fadeIn-top fadeIn-right">
+            <h3>After Care Card Design</h3>
+            <p>Client: Heavenly Plants</p>
+          </div>
         </div>
       </div>
+
+      <!-- <div class="portfolio">
+        <h5 class="mb-5">
+          <a class="text-decoration-none color_red" href="download_portfolio">
+            Click here to download our portfolio
+          </a>
+        </h5>
+      </div> -->
     </section>
+
     <script src="js/app.js"></script>
   </body>
 </html>
