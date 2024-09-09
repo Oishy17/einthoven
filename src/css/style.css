@@ -88,12 +88,14 @@ nav ul li a {
   padding: 0px 20px;
   /* background-color: #1e1b2a; */
   text-align: center;
+ 
 }
 
 .department-grid {
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
+   grid-template-columns: repeat(4, 1fr); 
   gap: 20px;
+  
 }
 
 .department {
@@ -101,6 +103,19 @@ nav ul li a {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  
+}
+.department h3{
+  font-family: "Poppins", sans-serif;
+  color: #ffc36c;
+  font-weight: bold;
+  text-shadow: 0.5px 0.3px 1.5px;
+  
+}
+
+.department img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .activity {
