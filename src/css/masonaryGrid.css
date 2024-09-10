@@ -2,7 +2,7 @@
     /* width: 1250px; */
     margin: 0px auto;
     columns: 3;
-    column-gap: 10px;
+    column-gap: 5px;
 }
 
 .box {
@@ -10,7 +10,7 @@
     padding: 5px;
     background-color: #242038;
     border: 1px solid #0331;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     break-inside: avoid;
 }
 
@@ -113,7 +113,7 @@
     .box_container {
         margin: 0px auto;
         columns: 2;
-        column-gap: 10px;
+        column-gap: 2px;
     }
 
     .content{
