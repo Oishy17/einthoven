@@ -124,3 +124,247 @@ nav ul li a {
 .activity {
   background-color: #28243d;
 }
+
+/* Our Team Section */
+.team {
+  padding: 50px 20px;
+  background-color: #1e1b2a;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.team-member {
+  background-color: #242038;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  align-items: center;
+  margin: auto;
+}
+
+.team-member h3 {
+  font-size: 1.2rem; 
+  margin-bottom: 5px;
+  color: #ffc36c;
+  font-weight: bold;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #999;
+}
+
+.team .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Web designer Section */
+.webDesigners{
+  margin: 20px;
+   
+}
+.webDesigners h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.designers{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.designer{
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.designer-img{
+    width: 85%;
+    margin: 10px;
+}
+
+.designer-img img{
+  border-radius: 5%;
+}
+
+.designer-name{
+  color: #ffc36c;
+  font-weight: bold;
+  font-family: "Poppins", sans-serify;
+}
+
+.designer-dept{
+  color: #bbc3cc;
+}
+
+/* Contact Us Section */
+.contact {
+  padding: 50px 20px;
+  background-color: #000000;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.contact-info .club-info img,
+.contact-info .mist-info img {
+    margin-bottom: 10px;
+}
+
+.contact-info .mist-info p {
+  font-size: 0.9rem;
+  color: #ccc;
+  text-align: left;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mist{
+  display: flex;
+  gap: 1.5pc;
+}
+
+.mist img{
+  width: 20px;
+  height: 20px;
+}
+
+/* Footer */
+footer {
+  background-image: linear-gradient(90deg, #34194F 1.5%, #8676AD 100%);
+  padding: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.footerlogo{
+  width: 15rem;
+}
+
+.contact-section {
+  max-width: 400px;
+}
+
+.links-section{
+  justify-content: center;
+  align-items: left;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+footer h2{
+  color: white;
+}
+
+.links{
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  color: #ffc36c;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+.social-section{
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.social-section ul {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.mec{
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  }
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+}
+.fa {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
