@@ -57,7 +57,7 @@ nav ul li a {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  background-clip:text;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -65,7 +65,7 @@ nav ul li a {
 .hero p {
   font-size: 1.5rem;
   margin-bottom: 40px;
-  background-clip:text;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -88,14 +88,12 @@ nav ul li a {
   padding: 0px 20px;
   /* background-color: #1e1b2a; */
   text-align: center;
- 
 }
 
 .department-grid {
   display: grid;
   /* grid-template-columns: repeat(4, 1fr);  */
   gap: 20px;
-  
 }
 
 .department {
@@ -103,9 +101,8 @@ nav ul li a {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  
 }
-.department h3{
+.department h3 {
   font-family: "roboto", sans-serif;
   color: #ffc36c;
   font-size: 24px;
@@ -113,7 +110,6 @@ nav ul li a {
   font-weight: bold;
   letter-spacing: 1px;
   /* text-shadow: 0.0px 0.0px 1px; this makes the texts blur */
-  
 }
 
 .department img {
@@ -127,20 +123,13 @@ nav ul li a {
 
 /* Our Team Section */
 .team {
-  padding: 50px 20px;
   background-color: #1e1b2a;
   text-align: center;
 }
 
-.team h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  /* grid-template-columns: repeat(3, 2fr); */
   gap: 20px;
   justify-content: center;
 }
@@ -162,14 +151,12 @@ nav ul li a {
 }
 
 .team-member h3 {
-  font-size: 1.2rem; 
   margin-bottom: 5px;
   color: #ffc36c;
   font-weight: bold;
 }
 
 .team-member p {
-  font-size: 1rem;
   color: #999;
 }
 
@@ -185,55 +172,40 @@ nav ul li a {
 }
 
 /* Web designer Section */
-.webDesigners{
-  margin: 20px;
-   
-}
-.webDesigners h2{
-  text-align: center;
-  font-weight: bold;
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-.designers{
-  display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  gap: 20px;
-  justify-content: center;
+
+.designers {
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 2fr); */
+  /* gap: 20px; */
+  /* justify-content: center;
   align-items: center;
   margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 5%; */
   text-align: center;
 }
 
-.designer{
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
+.designer-img {
+  width: 85%;
+  margin: 10px;
 }
 
-.designer-img{
-    width: 85%;
-    margin: 10px;
-}
-
-.designer-img img{
+.designer-img img {
   border-radius: 5%;
 }
 
-.designer-name{
+.designer-name {
   color: #ffc36c;
   font-weight: bold;
   font-family: "Poppins", sans-serify;
 }
 
-.designer-dept{
+.designer-dept {
   color: #bbc3cc;
 }
 
 /* Contact Us Section */
 .contact {
-  padding: 50px 20px;
+  padding: 50px 0px;
   background-color: #000000;
   text-align: center;
 }
@@ -247,7 +219,7 @@ nav ul li a {
 
 .contact-info .club-info img,
 .contact-info .mist-info img {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .contact-info .mist-info p {
@@ -263,19 +235,19 @@ nav ul li a {
   text-align: center;
 }
 
-.mist{
+.mist {
   display: flex;
   gap: 1.5pc;
 }
 
-.mist img{
+.mist img {
   width: 20px;
   height: 20px;
 }
 
 /* Footer */
 footer {
-  background-image: linear-gradient(90deg, #34194F 1.5%, #8676AD 100%);
+  background-image: linear-gradient(90deg, #34194f 1.5%, #8676ad 100%);
   padding: 40px;
 }
 
@@ -285,8 +257,7 @@ footer {
   flex-wrap: wrap;
 }
 
-
-.footerlogo{
+.footerlogo {
   width: 15rem;
 }
 
@@ -294,18 +265,18 @@ footer {
   max-width: 400px;
 }
 
-.links-section{
+.links-section {
   justify-content: center;
   align-items: left;
   margin: auto;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 
-footer h2{
+footer h2 {
   color: white;
 }
 
-.links{
+.links {
   list-style: none;
   display: flex;
   gap: 12px;
@@ -318,10 +289,10 @@ a {
 }
 
 a:hover {
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
-.social-section{
+.social-section {
   margin: auto;
   font-size: 1.2rem;
 }
@@ -332,11 +303,11 @@ a:hover {
   margin: auto;
 }
 
-.mec{
+.mec {
   text-align: center;
   font-weight: bold;
   font-size: 3rem;
-  }
+}
 
 .footer-bottom {
   text-align: center;
@@ -357,8 +328,8 @@ a:hover {
 }
 
 .fa-facebook {
-background: #3B5998;
-color: white;
+  background: #3b5998;
+  color: white;
 }
 .fa-youtube {
   background: #bb0000;
