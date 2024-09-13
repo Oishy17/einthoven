@@ -121,6 +121,142 @@ nav ul li a {
   background-color: #28243d;
 }
 
+/* last activity Section */
+
+.last-activity{
+  margin: auto;
+  margin-bottom: 50px;
+  }
+  
+  .last-activity h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .last {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    
+  }
+  
+  .panel {
+    height: 220px;
+    width: 190px;
+    position: relative;
+    
+    &:hover {
+      .card {
+        filter: blur(1.5px);
+        background-size: 115% 115%;
+      }
+      .title {
+        color: rgba(255, 255, 255, 0.2);
+      }
+      .border {
+        border: 1px solid rgba(255, 255, 255, 1);
+      }
+      .slide {
+        bottom: 0px;
+      }
+      .ring:before,
+      .ring:after {
+        transform: translateX(-50%) translateY(-50%) rotate(310deg);
+      }
+    }
+  }
+  .ring,
+  .card,
+  .border,
+  .slide,
+  .line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .ring {
+    color: #fffbf1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 190px;
+  }
+  
+  .card {
+    transition: all 1s;
+    height: 220px;
+    width: 190px;
+  
+  }
+  .card img{
+   height: 210px;
+    width: 180px;
+    opacity: 0.5;
+    border: 2px solid #ffc36c;
+  }
+  
+  .ring:before,
+  .ring:after {
+    content: "";
+    padding: 0.5em 0.8em;
+    position: absolute;
+    left: 50%;
+    width: 115%;
+    top: 50%;
+    display: block;
+    border: 5px solid #ffc36c;
+    border-radius: 50%;
+    transition: transform 1s;
+    transform: translateX(-50%) translateY(-50%) rotate(50deg);
+  }
+  
+  .ring:before {
+    border-color: #ffc36c #ffc36c rgba(0, 0, 0, 0)
+      rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+  
+  .ring:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ffc36c
+      #ffc36c;
+  }
+  
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 1s;
+    top: 0;
+  }
+  
+  .border {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    height: 230px;
+    width: 200px;
+    transition: border 1s;
+    overflow: hidden;
+  }
+  
+  .slide {
+    height: 260px;
+    width: 180px;
+    position: absolute;
+    border: 1px solid black;
+    bottom: -270px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: bottom 1s;
+    font-size: 12px;
+    text-align: justify;
+  }
+
 /* Our Team Section */
 .team {
   background-color: #1e1b2a;
@@ -139,6 +275,40 @@ nav ul li a {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  
+  background-color: #282c34;
+  background: linear-gradient(0deg, rgba(40,44,52,1) 0%, rgba(17,0,32,.5) 100%);
+  box-shadow: 0 7px 20px 5px #00000088;
+  border-radius: .7rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  overflow: hidden;
+  transition: .5s all;
+  hr{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #88888855;
+    margin-top: 0;
+}
+::before{
+  position: fixed;
+  content: "";
+  box-shadow: 0 0 100px 40px #ffffff08;
+  top: -10%;
+  left: -100%;
+  transform: rotate(-45deg);
+  height: 60rem;
+  transition: .7s all;
+}
+&:hover{
+  border: 1px solid #ffffff44;
+  box-shadow: 0 7px 50px 10px #000000aa;
+  transform: scale(1.015);
+  ::before{
+    top: -100%;
+    left: 200%;
+  }
+}
 }
 
 .team-member img {
@@ -148,6 +318,10 @@ nav ul li a {
   margin-bottom: 10px;
   align-items: center;
   margin: auto;
+  margin: auto;
+  border: 1px solid #ffc36c;
+	border-radius: 50%;
+	padding: 7px;
 }
 
 .team-member h3 {
@@ -174,23 +348,38 @@ nav ul li a {
 /* Web designer Section */
 
 .designers {
-  /* display: grid; */
-  /* grid-template-columns: repeat(3, 2fr); */
-  /* gap: 20px; */
-  /* justify-content: center;
+   display: grid; 
+  grid-template-columns: repeat(3, 2fr);
+  gap: 20px; 
+  justify-content: center;
   align-items: center;
   margin-left: 5%;
-  margin-right: 5%; */
+  margin-right: 5%;
   text-align: center;
+}
+
+.designer-details{
+  width: 100%;
+  background-image:linear-gradient(250deg, rgb(55, 58, 65) 0%, rgba(11, 1, 19, 0.5) 100%);
+  color: #555;
+  padding: 180px 25px 25px;
+  margin-top: -160px;
+  display: inline-block;  
+  border-radius: 3%;
+  
 }
 
 .designer-img {
   width: 85%;
-  margin: 10px;
+  margin: auto;
 }
 
 .designer-img img {
   border-radius: 5%;
+  z-index: 1;
+ position: relative;
+ padding: 10px;
+ border: 2px solid #e8b563; 
 }
 
 .designer-name {
@@ -316,26 +505,45 @@ a:hover {
   padding-top: 10px;
   font-size: 14px;
 }
-.fa {
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 5px;
-  border-radius: 50%;
+.facebook-follow {
+  display: inline-block;
+  border: 4px solid rgb(252, 186, 63);
+  padding: 10px;
+  box-shadow: 0.45rem 0.45rem 0 rgb(222, 201, 162);
+	border-radius: 0.8rem;
 }
-.fa:hover {
-  opacity: 0.7;
+.fb-post{
+  color: #ffc36c;
+  font-weight: bold;
+}
+.facebook-box {
+  display: flex;
+  align-items: center;
+}
+.facebook-box img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
-.fa-facebook {
-  background: #3b5998;
-  color: white;
+.facebook-details {
+  text-align: left;
 }
-.fa-youtube {
-  background: #bb0000;
-  color: white;
+
+.facebook-details p {
+  margin: 5px 0;
 }
-.fa-google {
-  background: #dd4b39;
+
+.like-button {
+  background-color: #4267B2;
   color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-button:hover {
+  background-color: #365899;
 }
