@@ -532,6 +532,26 @@ a:hover {
   border: 3px solid rgb(64, 234, 211) ;
 }
 
+.p2023{
+  color: #796cdd;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.p2022 h3{
+  color: #50a7e0;
+  font-weight: bold;
+  }
+
+
+.p2021 h3{
+  color: #138f36;
+  font-weight: bold;
+}
+ 
+.p2021 img{
+  border: 3px solid #138f36 ;
+}
 /*alumni end*/
 
 /*team page end*/
