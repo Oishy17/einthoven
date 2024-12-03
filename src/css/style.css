@@ -541,19 +541,51 @@ a:hover {
 .p2022 h3{
   color: #50a7e0;
   font-weight: bold;
-  }
+ }
 
-
-.p2021 h3{
-  color: #138f36;
+ .p2022 h1{
+  color: #50a7e0;;
   font-weight: bold;
-  margin-top: 1.5rem; 
-  margin-bottom: 1.5rem;
+  margin-top: 2rem; 
+  margin-bottom: 2rem;
 }
  
+.p2022 img{
+  border: 3px solid #50a7e0 ;
+}
+
+
+
+.p2021 h1{
+  color: #138f36;
+  font-weight: bold;
+  margin-top: 2rem; 
+  margin-bottom: 2rem;
+}
+ 
+.p2021 h3{
+  color: #138f36;
+
+}
 .p2021 img{
   border: 3px solid #138f36 ;
 }
+
+
+.p2020 h1{
+  color: #ce6d6d;
+  font-weight: bold;
+  margin-top: 2rem; 
+  margin-bottom: 2rem;
+}
+
+.p2020 h3{
+  color: #ce6d6d;
+  }
+
+  .p2020 img{
+    border: 3px solid #ce6d6d ;
+  }
 /*alumni end*/
 
 /*team page end*/
