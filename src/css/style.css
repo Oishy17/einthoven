@@ -90,6 +90,7 @@ nav ul li a {
   text-align: center;
 }
 
+
 .department-grid {
   display: grid;
   /* grid-template-columns: repeat(4, 1fr);  */
@@ -386,7 +387,7 @@ a:hover {
   width: 100px;
   height: auto;
   margin-right: 10px;
-  border-radius: 5px;
+  border-radius: 50%;
 }
 
 .facebook-details {
