@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
   margin: 0;
@@ -82,10 +83,13 @@ nav ul li a {
 .about {
   text-align: center;
   background-color: #282030;
+  margin-bottom: -25%;
+  font-weight: bolder;
 }
 
 .departments {
-  padding: 0px 20px;
+  padding: -50px 20px;
+  margin-top: -100px;
   /* background-color: #1e1b2a; */
   text-align: center;
 }
@@ -590,3 +594,163 @@ a:hover {
 /*alumni end*/
 
 /*team page end*/
+
+/* Container for the club activities section */
+.activity {
+  padding: 40px 20px;
+  background-color: #1e1b2a;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+/* Heading style */
+.activity h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Activity grid container */
+.activity .box_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 grid layout */
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Individual activity box style */
+.activity .box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #242038;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  height: 200px; /* Consistent height for 2x2 grid */
+}
+
+.activity .box:hover {
+  transform: scale(1.05);
+}
+
+/* Image style */
+.activity .content-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+.activity .box:hover .content-image {
+  filter: brightness(1.1);
+}
+
+/* Overlay for text (adjusted to fit image) */
+.activity .content-details {
+  position: absolute;
+  margin-left: -5%;
+  width: 100%;
+  height: 150%; /* Cover the full image */
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #fff;
+  padding: 5%; /* Reduced padding for tighter fit */
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 1;
+}
+
+.activity .box:hover .content-details {
+  opacity: 1;
+
+}
+
+/* Activity title */
+.activity .content-details h3 {
+  font-size: 1.5rem; /* Smaller font size for better fit */
+  font-weight: bold;
+  margin-bottom: 2px; /* Reduced margin */
+  color: #ffc36c;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  margin-top: 25%;
+  font-family: "Cormorant Garamond", serif;
+ }
+
+/* Activity description */
+.activity .content-details p {
+  font-size: 0.7rem; /* Smaller font size */
+  color: #ccc;
+  line-height: 1.5; /* Tighter line height */
+  margin: 0;
+  padding: 0 2px; /* Minimal padding */
+  display: none;
+}
+
+.activity .box:hover .content-details p {
+  display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .activity .box_container {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+  .activity .box {
+    height: 150px; /* Smaller on mobile */
+  }
+  .activity .content-details p {
+    display: none; /* Hide description on mobile */
+  }
+  .activity h2 {
+    font-size: 2rem;
+  }
+  .activity .content-details h3 {
+    font-size: 0.9rem;
+  }
+  .activity .content-details {
+    padding: 3px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .activity .box_container {
+    grid-template-columns: repeat(3, 1fr); /* Maintain 2 columns on tablet */
+  }
+  .activity .box {
+    height: 180px; /* Adjusted for tablet */
+  }
+  .activity .content-details h3 {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .activity .box_container {
+    grid-template-columns: repeat(4, 1fr); /* 2x2 grid for 4 images on desktop */
+  }
+  .activity .box {
+    height: 200px; /* Consistent height on desktop */
+  }
+  .activity .content-details h3 {
+    font-size: 1.2rem;
+  }
+  .activity .content-details p {
+    font-size: 0.7rem;
+  }
+}
